@@ -1,0 +1,1 @@
+This was an initial assessment of solver performance, attempted on multiple processors, but only completed on a single processor.

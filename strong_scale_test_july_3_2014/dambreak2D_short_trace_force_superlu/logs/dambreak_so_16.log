@@ -1,0 +1,80 @@
+[       1] Initializing MPI
+[       1] PETSc options from commandline
+[       1] ['/u/aron/proteus/garnet.gnu/bin/parun', '-rans2p_ksp_type', 'preonly', '-rans2p_pc_type', 'lu', '-rans2p_pc_factor_mat_solver_package', 'superlu_dist', '-ncls_ksp_type', 'preonly', '-ncls_pc_type', 'lu', '-ncls_pc_factor_mat_solver_package', 'superlu_dist', '-vof_ksp_type', 'preonly', '-vof_pc_type', 'lu', '-vof_pc_factor_mat_solver_package', 'superlu_dist', '-rdls_ksp_type', 'preonly', '-rdls_pc_type', 'lu', '-rdls_pc_factor_mat_solver_package', 'superlu_dist', '-mcorr_ksp_type', 'preonly', '-mcorr_pc_type', 'lu', '-mcorr_pc_factor_mat_solver_package', 'superlu_dist', '-kappa_ksp_type', 'preonly', '-kappa_pc_type', 'lu', '-kappa_pc_factor_mat_solver_package', 'superlu_dist', '-dissipation_ksp_type', 'preonly', '-dissipation_pc_type', 'lu', '-dissipation_pc_factor_mat_solver_package', 'superlu_dist']
+[       1] Adding . to path for loading modules
+[       1] Loading problem-specific modules
+[       1] Importing input modules
+[       1] Loading so module = dambreak_so.py
+[       1] Mesh generated using: tetgen -VApq30Dena0.00001225 mesh.poly
+[       1] Loading p module = twp_navier_stokes_p
+[       1] Loading n module = twp_navier_stokes_n
+[       1] RANS2P.SubgridError: lagging requested but must lag the first step; switching lagging off and delaying
+[       1] RANS2P.ShockCapturing: lagging requested but must lag the first step; switching lagging off and delaying
+[       1] Loading p module = vof_p
+[       1] Loading n module = vof_n
+[       1] VOF.ShockCapturing: lagging requested but must lag the first step; switching lagging off and delaying
+[       1] Loading p module = ls_p
+[       1] Loading n module = ls_n
+[       1] NCLS.ShockCapturing: lagging requested but must lag the first step; switching lagging off and delaying
+[       1] Loading p module = redist_p
+[       1] Loading n module = redist_n
+[       1] Loading p module = ls_consrv_p
+[       1] Loading n module = ls_consrv_n
+[       1] Attaching input stream to stdin
+[       1] Running Proteus version 0.9.0
+[       1] Setting simulation processing defaults
+[       1] Starting dambreak_p run number 0
+[       1] Initializing NumericalSolution for dambreak_p
+ System includes: 
+twp_navier_stokes_p
+vof_p
+ls_p
+redist_p
+ls_consrv_p
+
+[       1] Setting Archiver(s)
+[       2] Setting up MultilevelMesh
+[       2] Building one multilevel mesh for all models
+[       2] Generating mesh for twp_navier_stokes_p
+[       2] Calling Triangle to generate 2D mesh fortwp_navier_stokes_p
+[       2] Converting to Proteus Mesh
+[       2] Generating 1-level mesh from coarse Triangle mesh
+[       2] Partitioning mesh among 16 processors using partitioningType = 1
+[       2] Number of Subdomain Elements Owned= 2775
+[       2] Number of Subdomain Elements = 2775
+[       2] Number of Subdomain Nodes Owned= 1386
+[       2] Number of Subdomain Nodes = 1464
+[       2] Number of Subdomain elementBoundaries Owned= 4161
+[       2] Number of Subdomain elementBoundaries = 4238
+[       2] Number of Subdomain Edges Owned= 4104
+[       2] Number of Subdomain Edges = 4238
+[       2] Finished partitioning
+[       2] *** Global ***
+Number of triangles  : 43954
+Number of edges : 66189
+Number of nodes : 22236
+
+*** Local ***
+Number of triangles  : 2775
+Number of edges : 4238
+Number of nodes : 1464
+
+[       2] Setting up MultilevelTransport for twp_navier_stokes_p
+[       2] Building Transport for each mesh
+[       2] Generating Trial Space
+[       2] Generating Test Space
+[       2] Allocating u
+[       2] Allocating phi
+[       2] Setting Boundary Conditions
+[       2] Setting Boundary Conditions-1
+[       2] Setting Boundary Conditions-2
+[       2] Setting Boundary Conditions-2a
+[       2] Setting Boundary Conditions-3
+[       2] Setting Boundary Conditions-4
+[       2] Initializing OneLevelTransport
+[       2] Updating local to global mappings
+[       3] Building time integration object
+[       3] Calculating numerical quadrature formulas
+[       3] Element Quadrature
+[       3] Element Boundary Quadrature
+[       3] Global Exterior Element Boundary Quadrature
